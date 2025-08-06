@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Button trong HTML -->
+        <!-- LÀM DANH MỤC SINH ĐỘNG HƠN  -->
+        
+    <!-- danh mục nằm bên phải  -->
+    <style>
+        .container {
+          display: flex; /* Sử dụng Flexbox */
+          justify-content: space-between; /* Chia không gian giữa các phần tử */
+        }
+        .content {
+          width: 30%; /* Phần nội dung chính chiếm 70% */
+        }
+        .sidebar {
+          width: 25%; /* Danh mục chiếm 25% */
+          background-color: #f4f4f4; /* Màu nền */
+          padding: 10px; /* Khoảng cách bên trong */
+        }
+      </style>
+      <body>
+        <button class="register-btn primary"> <a href="dangnhap.html" target="blank" > Đăng ký đmm </a></button>
+        <button class="register-btn primary"> <a href="dangnhap.html" target="blank"> Đăng nhập</a></button> 
+
+      </body>
+      
+      <link rel="stylesheet" href="danhmuc.css">
+      <div class="container">
+        <div class="content">
+          
+        </div>
+       
+        <div class="sidebar">
+          <h2>Danh mục</h2>
+          <ul>
+            <li>DR STONE SEASON 1</li> <br>
+            <li>DR STONE SEASON 2</li> <br>
+            <li>DR STONE SEASON 3</li> <br>
+          </ul>
+        </div>
+      </div>
+    
+
+        <!-- LÀM TO VÀ TÔ MÀU CHO ĐĂNG NHẬP VÀ ĐĂNG KÝ  -->
+        <style>
+            /* CSS để làm button to hơn */
+            /* CSS để làm button to hơn */
+        .big-button {
+            padding: 15px 30px; /* Tăng padding để button to hơn */
+            font-size: 18px;   /* Tăng kích thước chữ */
+            background-color: #0cd42a; /* Màu nền */
+            color: white;      /* Màu chữ */
+            border: none;      /* Bỏ viền */
+            border-radius: 5px; /* Bo góc */
+            cursor: pointer;   /* Con trỏ chuột thành bàn tay khi di chuột qua */
+        }
+
+        .big-button:hover {
+            background-color: #e5204b; /* Đổi màu nền khi di chuột qua */
+
+        
+        }
+
+        a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: white; /* Đổi màu chữ thành màu đen (hoặc bất kỳ màu nào bạn muốn) */
+    font-weight : bold
+}
+            /* CSS cho nút Đăng ký và Đăng nhập */
+            .register-btn {
+                padding: 10px 20px; /* Kích thước nút */
+                font-size: 16px;    /* Kích thước chữ */
+                color: rgb(16, 3, 3);       /* Màu chữ */
+                border: #f4f4f4;       /* Bỏ viền */
+                border-radius: 5px; /* Bo góc */
+                cursor: pointer;    /* Con trỏ chuột thành bàn tay khi di chuột qua */
+                text-decoration: none; /* Bỏ gạch chân của thẻ <a> */
+                display: inline-block; /* Hiển thị như một khối */
+                margin-right: 10px; /* Khoảng cách giữa các nút */
+            }
+    
+            .register-btn.primary {
+                background-color: #17e26c; /* Màu nền cho nút Đăng ký */
+            }
+    
+            .register-btn.primary:hover {
+                background-color: #ec3e0e; /* Màu nền khi di chuột qua */
+            }
+    
+            .register-btn.secondary {
+                background-color: #6c757d; /* Màu nền cho nút Đăng nhập */
+            }
+    
+            .register-btn.secondary:hover {
+                background-color: #5a6268; /* Màu nền khi di chuột qua */
+            }
+        </style>
+
+        <!-- BỐ CỤC ẢNHẢNH -->
+        <style>
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 10px;
+                padding: 10px;
+            }
+    
+            .image-grid img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt mà */
+            }
+    
+            .image-grid img:hover {
+                transform: scale(1.05); /* Phóng to ảnh khi hover */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+            }
+        </style>
+        
+    
+
+
+    
+    <br>
+    <hr>
+    <img src="cactapss3/anh-ngang.jpg" >
+    <br>
+    <br>
+    <div style="display: flex; gap:20px;">
+        <div> 
+            <button class="big-button"> <a> Trang Chủ </a></button> 
+        </div>
+        
+    
+    <div>
+        <button class="big-button"> <a href="tongquannhanvat.html" >Tổng Quan Nhân Vật</a> </button> 
+    </div>
+
+    <div>
+        <button class="big-button"> <a href="cactapphim.html" > Danh Sách Phim </a></button> 
+    </div>
+
+    <div>
+        <button class="big-button"> <a href="gioithieu.html" > Giới Thiệu</a>  </button> 
+    </div>
+
+    <div>
+        <button class="big-button"> <a href="danhgia.html" > Đánh Giá </a> </button> 
+    </div>
+
+    <div>
+        <button class="big-button"> <a href="loitrian.html" > Lời Tri Ân  </a> </button> 
+    </div>
+</div>
+    
+    
+    <br>
+    
+    <br> 
+    <div class="image-grid">
+    <a href="https://www.youtube.com/watch?v=FVNlGEayNgw&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=17"> 
+    <img src= "cactapss3/tap8ss3.jpg" alt="bla" height="200" title="vua khoa học " style="margin-right: 30px;">
+    </a>
+    <img src= "cactapss3/tap10ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap9ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    
+    <img src= "cactapss3/tap7ss3.jpg" alt="bla" height="200" title="vua khoa học " style="margin-right: 30px;">
+    <img src= "cactapss3/tap6ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap5ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    
+    <img src= "cactapss3/tap4ss3.jpg" alt="bla" height="200" title="vua khoa học " style="margin-right: 30px;">
+    <img src= "cactapss3/tap1ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap2ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap3ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap11ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap12ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap13ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap14ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap15ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap16ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap17ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap18ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap19ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap20ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap21ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap22ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+    <img src= "cactapss3/tap23ss3.jpg" alt="bla" height="200" title="vua khoa học "  style ="margin-right: 30px;">
+
+</div>
+
+
+<!-- PHẦN FOOTERFOOTER -->
+
+    <style>
+        /* Phần footer */
+        footer {
+            background-color: #000; /* Nền đen */
+            color: #fff; /* Chữ trắng */
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        footer ul {
+            list-style-type: none; /* Bỏ dấu chấm liệt kê */
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 10px; /* Khoảng cách giữa các dòng */
+            font-size: 14px;
+        }
+
+        footer ul li:last-child {
+            margin-bottom: 0; /* Bỏ khoảng cách dòng cuối cùng */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Phần footer -->
+    <footer>
+        <ul>
+            <li>Công Ty TNHH 1 Thành viên LÊ QUỐC CƯỜNG SỞ HỮU BẢN QUYỀN TRANG WEB NÀY TỪ 14/2/2025</li>
+            <li>NGÂN HÀNG MB BANK : 0969839241</li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+        
+</body>
+</html>

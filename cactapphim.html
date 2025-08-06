@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* CSS để làm button to hơn */
+        .big-button {
+            padding: 15px 30px; /* Tăng padding để button to hơn */
+            font-size: 18px;   /* Tăng kích thước chữ */
+            background-color: #0cd42a; /* Màu nền */
+            color: white;      /* Màu chữ */
+            border: none;      /* Bỏ viền */
+            border-radius: 5px; /* Bo góc */
+            cursor: pointer;   /* Con trỏ chuột thành bàn tay khi di chuột qua */
+        }
+
+        .big-button:hover {
+            background-color: #e5204b; /* Đổi màu nền khi di chuột qua */
+
+        
+        }
+
+        a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: white; /* Đổi màu chữ thành màu đen (hoặc bất kỳ màu nào bạn muốn) */
+    font-weight : bold
+}
+
+    /* chèn chữ quay vềvề */
+    .quayve {
+            padding: 15px 30px; /* Tăng padding để button to hơn */
+            font-size: 15px;   /* Tăng kích thước chữ */
+            background-color: #e90d0d; /* Màu nền */
+            color: white;      /* Màu chữ */
+            border: none;      /* Bỏ viền */
+            border-radius: 5px; /* Bo góc */
+            cursor: pointer;   /* Con trỏ chuột thành bàn tay khi di chuột qua */
+        }
+        /* <!-- làm cho chữ các tập phim ở mục menu màu đỏđỏ --> */
+
+        .cactapphim {
+    padding: 15px 30px; /* Tăng padding để button to hơn */
+    font-size: 18px;   /* Tăng kích thước chữ */
+    background-color: red; /* Màu nền */
+    color: white;      /* Màu chữ */
+    border: none;      /* Bỏ viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer;   /* Con trỏ chuột thành bàn tay khi di chuột qua */
+}
+        </style>
+
+
+<!-- chèn chữ quay về trang trctrc -->
+<a href="trangchu.html" style="position: fixed; top: 10px; left: 10px; text-decoration: none;">
+    <button class="quayve" style="padding: 10px 20px; font-size: 16px;"> Quay về</button>
+</a>
+
+
+
+
+<img src="cactapss3/anh-ngang.jpg" >
+<br>
+<br>
+<div style="display: flex; gap:20px;">
+    <div> 
+        <button class="big-button"> <a href="trangchu.html"    >Trang Chủ </a> </button> 
+    </div>
+    
+
+<div>
+    <button class="big-button"> <a href="tongquannhanvat.html"    >Tổng Quan Nhân Vật</a> </button> 
+</div>
+
+<div>
+    <button class="big-button"> <a href="cactapphim.html"> Danh Sách Phim </a> </button> 
+</div>
+
+<div>
+    <button class="big-button"> <a href="gioithieu.html"> Giới Thiệu  </a>  </button> 
+</div>
+
+<div>
+    <button class="big-button"> <a href="danhgia.html" > Đánh Giá </a> </button> 
+</div>
+<div>
+    <button class="big-button"> <a href="loitrian.html" > Lời Tri Ân </a></button>
+</div>
+</div>
+
+
+
+<!-- phần các tập phim đây  -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách tập phim</title>
+    <style>
+        /* Phần chung */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Danh sách tập phim */
+        .episode-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .episode-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .episode-item a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .episode-item img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            margin-left: 20px; /* Đẩy ảnh sang phải */
+        }
+
+        .episode-item .episode-info {
+            flex: 1;
+        }
+
+        .episode-item .episode-info h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .episode-item .episode-info p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <ul class="episode-list">
+        <!-- Tập 1 -->
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=J0zqUQALoXI&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=25" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 1: RYUSUI</h3>
+                </div>
+                <img src="cactapss3/tap1ss3.jpg" alt="Tập 1">
+            </a>
+        </li>
+
+        <!-- Tập 2 -->
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=15Ae_gO0PE4&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=24" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 2: BẢN ĐỒ THẾ GIỚI MỚI </h3>
+                </div>
+                <img src="cactapss3/tap2ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+
+        <!-- Tập 3 -->
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=cF90Q-jf8Fs&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=22" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 3: THAM LAM BẰNG CÔNG LÝ</h3>
+                </div>
+                <img src="cactapss3/tap3ss3.jpg" alt="Tập 3">
+            </a>
+        </li>
+
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=C7ksQrpQm5I&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=21" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 4: LẦN ĐẦU TIẾP XÚC </h3>
+                </div>
+                <img src="cactapss3/tap4ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=FoTq-GezYMk&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=20" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 5: CON MẮT KHOA HỌC </h3>
+                </div>
+                <img src="cactapss3/tap5ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=1ZWFyr9uVWo&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=19" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 6: THUYỀN KHOA HỌC PERSEUS </h3>
+                </div>
+                <img src="cactapss3/tap6ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=cK_08cFK0vo&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=18" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 7: HỘP KHO BÁU </h3>
+                </div>
+                <img src="cactapss3/tap7ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=FVNlGEayNgw&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=17" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 8: ÁNH SÁNG CỦA HY VỌNG VÀ TUYỆT VỌNG </h3>
+                </div>
+                <img src="cactapss3/tap8ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=64pTwfUbNAg&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=16" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 9: ÁT CHỦ BÀI CỦA THUYỀN KHOA HỌC  </h3>
+                </div>
+                <img src="cactapss3/tap9ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=sEDpkRWrPV8&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=15" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 10: KHOA HỌC LÀM ĐẸP </h3>
+                </div>
+                <img src="cactapss3/tap10ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=EwYJ8OxEt-U&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=14" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 11: CHIẾN TRANH KHOA HỌCHỌC </h3>
+                </div>
+                <img src="cactapss3/tap11ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=6WKe3FSQk-0&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=13" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 12: ĐIỀU KÌ DIỆU NẰM TRONG BÀN TAY </h3>
+                </div>
+                <img src="cactapss3/tap12ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+        <li class="episode-item">
+            <a href="https://www.youtube.com/watch?v=NQQjWMXDCu0&list=PLOVZwvNm10lXwY00kVyHn3aF5o4LMsL47&index=12" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 13: VƯƠNG QUỐC KHOA HỌC PHẢN CÔNG </h3>
+                </div>
+                <img src="cactapss3/tap13ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+        <li class="episode-item">
+            <a href="https://example.com/tap2" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 14: CHÂN TƯỚNG CỦA MEDUSA </h3>
+                </div>
+                <img src="cactapss3/tap14ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+        <li class="episode-item">
+            <a href="https://example.com/tap2" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 15: MẢNH GHÉP ĐẤU TRÍ </h3>
+                </div>
+                <img src="cactapss3/tap15ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+        <li class="episode-item">
+            <a href="https://example.com/tap2" target="_blank">
+                <div class="episode-info">
+                    <h3>Tập 16: TRẬN CHIẾN BA CHIỀU QUYẾT ĐỊNH</h3>
+                </div>
+                <img src="cactapss3/tap16ss3.jpg" alt="Tập 2">
+            </a>
+        </li>
+    </ul>
+</body>
+
+<style>
+    /* Phần footer */
+    footer {
+        background-color: #000; /* Nền đen */
+        color: #fff; /* Chữ trắng */
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    footer ul {
+        list-style-type: none; /* Bỏ dấu chấm liệt kê */
+        padding: 0;
+        margin: 0;
+    }
+
+    footer ul li {
+        margin-bottom: 10px; /* Khoảng cách giữa các dòng */
+        font-size: 14px;
+    }
+
+    footer ul li:last-child {
+        margin-bottom: 0; /* Bỏ khoảng cách dòng cuối cùng */
+    }
+</style>
+</head>
+<body>
+<!-- Phần footer -->
+<footer>
+    <ul>
+        <li>Công Ty TNHH 1 Thành viên LÊ QUỐC CƯỜNG SỞ HỮU BẢN QUYỀN TRANG WEB NÀY TỪ 14/2/2025</li>
+        <li>NGÂN HÀNG MB BANK : 0969839241</li>
+    </ul>
+</footer>
+
+</html>
+</body>
+</html>
